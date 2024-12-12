@@ -1,5 +1,4 @@
-# Define the content of the README file
-readme_content = """
+
 # LUME ML Model Repository
 
 This repository contains a machine learning (ML) model implemented as a [LUME Model](https://github.com/slaclab/lume-model)/. The model the radation energy based on user-defined input parameters (twiss and taper values) and provides examples of its usage, including integration with [Cheetah](https://github.com/desy-ml/cheetah).
