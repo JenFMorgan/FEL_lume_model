@@ -1,0 +1,48 @@
+model_class: TorchModel
+input_variables:
+  alphax:
+    variable_type: scalar
+    default: -0.75
+    is_constant: false
+    value_range: [-2.5, 1.0]
+  alphay:
+    variable_type: scalar
+    default: 1.75
+    is_constant: false
+    value_range: [1.0, 2.5]
+  betax:
+    variable_type: scalar
+    default: 17.5
+    is_constant: false
+    value_range: [5.0, 30.0]
+  betay:
+    variable_type: scalar
+    default: 17.5
+    is_constant: false
+    value_range: [5.0, 30.0]
+  emitx:
+    variable_type: scalar
+    default: 5.5e-07
+    is_constant: false
+    value_range: [1.0e-07, 1.0e-06]
+  emity:
+    variable_type: scalar
+    default: 5.5e-07
+    is_constant: false
+    value_range: [1.0e-07, 1.0e-06]
+  taper:
+    variable_type: scalar
+    default: 0.03
+    is_constant: false
+    value_range: [0.0, 0.06]
+output_variables:
+  bandwidth_FWHM: {variable_type: scalar}
+  peak_energy: {variable_type: scalar}
+  peak_fluence: {variable_type: scalar}
+  peak_intensity: {variable_type: scalar}
+model: FELmodel_model.pt
+input_transformers: []
+output_transformers: []
+output_format: tensor
+device: cpu
+fixed_model: true
